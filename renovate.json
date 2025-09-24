@@ -1,1 +1,30 @@
-{}
+{
+  "packageRules": [
+    {
+      "description": [
+        "Disable automerge for patch and minor Typo3 updates"
+      ],
+      "matchManagers": [
+        "composer"
+      ],
+      "matchPackageNames": [
+        "typo3/**"
+      ],
+      "groupName": "Typo3 Packages Update",
+      "branchPrefix": "renovate/{{{baseBranch}}}-",
+      "branchTopic": "typo3-packages-update-grouped",
+      "automerge": false,
+      "matchUpdateTypes": [
+        "patch",
+        "minor"
+      ],
+      "vulnerabilityAlerts": {
+        "enabled": true,
+        "automerge": false,
+        "groupName": "TYPO3 Security Updates",
+        "branchPrefix": "renovate/{{{baseBranch}}}-",
+        "branchTopic": "typo3-packages-update-grouped"
+      }
+    }
+  ]
+}

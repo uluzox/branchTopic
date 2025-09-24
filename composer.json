@@ -1,0 +1,20 @@
+{
+  "name": "my/package",
+  "description": "Renovate Minimal Reproduction",
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "typo3/cms-core": "12.4.36",
+    "typo3/cms-linkvalidator": "12.4.36",
+    "typo3/cms-viewpage": "12.4.36"
+  },
+  "config": {
+    "allow-plugins": {
+      "typo3/class-alias-loader": true,
+      "typo3/cms-composer-installers": true
+    },
+    "platform": {
+      "php": "8.3"
+    },
+    "sort-packages": true
+  }
+}
